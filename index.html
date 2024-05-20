@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nova+Round&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Birds</title>
+</head>
+
+<body>
+
+    <main class="screen">
+        <img src="cloud-background.jpg" style="width: 100%; position: absolute;">
+        <h1>Birds</h1>
+        <section class="game-background"></section>
+        <section class="game">
+            <article class="score" id="score-container">
+                <h3> <b>score: </b></h3>
+                <h3 id="counter"></h3>
+            </article>
+            <article class="timer" id="timer-container">
+                <h3 id="timer"></h3>
+            </article>
+            <section class="layer-1" id="birds-container">
+                <button class="bird-orange " id="bird-1">
+                    <div class="peak"></div>
+                    <div class="body"></div>
+                    <div class="eye"></div>
+                    <div class="wing"></div>
+                </button>
+                <button class="bird-orange-3" id="bird-2">
+                    <div class="peak-reverse"></div>
+                    <div class="body-reverse"></div>
+                    <div class="eye-reverse"></div>
+                    <div class="wing-reverse"></div>
+                </button>
+                <button class="bird-orange-2" id="bird-3">
+                    <div class="peak"></div>
+                    <div class="body"></div>
+                    <div class="eye"></div>
+                    <div class="wing"></div>
+                </button>
+                <button class="bird-blue" id="bird-4">
+                    <div class="peak"></div>
+                    <div class="body-blue"></div>
+                    <div class="eye"></div>
+                    <div class="wing-blue"></div>
+                </button>
+                <button class="bird-blue-2" id="bird-5">
+                    <div class="peak-reverse"></div>
+                    <div class="body-blue-reverse"></div>
+                    <div class="eye-reverse"></div>
+                    <div class="wing-blue-reverse"></div>
+                </button>
+                <button class="bird-green" id="bird-6">
+                    <div class="peak"></div>
+                    <div class="body-green"></div>
+                    <div class="eye"></div>
+                    <div class="wing-green"></div>
+                </button>
+                <button class="bird-green-2" id="bird-7">
+                    <div class="peak-reverse"></div>
+                    <div class="body-green-reverse"></div>
+                    <div class="eye-reverse"></div>
+                    <div class="wing-green-reverse"></div>
+                </button>
+                <div class="cloud-1">
+                    <div class="cloud-left"></div>
+                    <div class="cloud-rigth"></div>
+                    <div class="cloud-center"></div>
+                </div>
+                <div class="cloud-2">
+                    <div class="cloud-left"></div>
+                    <div class="cloud-rigth"></div>
+                    <div class="cloud-center"></div>
+                </div>
+                <div class="cloud-3">
+                    <div class="cloud-left"></div>
+                    <div class="cloud-rigth"></div>
+                    <div class="cloud-center"></div>
+                </div>
+                <div class="cloud-4">
+                    <div class="cloud-left"></div>
+                    <div class="cloud-rigth"></div>
+                    <div class="cloud-center"></div>
+                </div>
+                <div class="cloud-5">
+                    <div class="cloud-left"></div>
+                    <div class="cloud-rigth"></div>
+                    <div class="cloud-center"></div>
+                </div>
+            </section>
+        </section>
+        <section class="starting" id="start-window">
+            <h3 class="text-1" id="text-container">Touch the birds as much as you can! </h3>
+            <section class="point-birds-container" id="point-birds">
+                <article class="orange">
+                    <div class="bird-orange-static">
+                        <div class="peak"></div>
+                        <div class="body"></div>
+                        <div class="eye"></div>
+                        <div class="wing"></div>
+                    </div>
+                    <h4>x1 pts</h4>
+                </article>
+                <article class="blue">
+                    <div class="bird-blue-static">
+                        <div class="peak"></div>
+                        <div class="body-blue"></div>
+                        <div class="eye"></div>
+                        <div class="wing-blue"></div>
+                    </div>
+                    <h4>x2 pts</h4>
+                </article>
+                <article class="green">
+                    <div class="bird-green-static">
+                        <div class="peak"></div>
+                        <div class="body-green"></div>
+                        <div class="eye"></div>
+                        <div class="wing-green"></div>
+                    </div>
+                    <h4>x3 pts</h4>
+                </article>
+            </section>
+            <h3 class="text-2" id="text-container-2">You've got <b>30</b> seconds! <br> </h3>
+            <button class="button-start" id="start-button">Start game</button>
+        </section>
+        <button class="button" id="reset-btn">Reset</button>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

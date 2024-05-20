@@ -1,0 +1,1191 @@
+.quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    font-family: "Quicksand";
+}
+
+.screen {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+
+
+.game-background {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    opacity: 30%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.game {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    opacity: 30%;
+    border-radius: 50px;
+    opacity: 100%;
+
+}
+
+.score {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 0;
+    left: 0;
+    margin: 5px auto;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.timer {
+    position: absolute;
+    right: 50px;
+    visibility: hidden;
+    color: #68B4E6;
+    padding: 20px;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    color: #404040;
+    font-size: 400%;
+    font-weight: 300;
+}
+
+
+h3 {
+    font-size: xx-large;
+    color: #68B4E6;
+    margin: 3px;
+    font-weight: 400;
+}
+
+.button-start {
+    background-color: #68B4E6;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: x-large;
+    justify-self: center;
+    cursor: pointer;
+    opacity: 60%;
+    grid-row-start: 5;
+}
+
+.button-start:hover {
+    transform: scaleX(1.1);
+    background-color: #68B4E6;
+    color: #404040;
+
+    opacity: 100%;
+    transition: all .1s ease-in-out;
+}
+
+.button {
+    position: absolute;
+    background-color: #B3D8F0;
+    color: #68B4E6;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: x-large;
+    bottom: 30px;
+    justify-self: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #68B4E6;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.cloud-center {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cloud-left {
+    position: absolute;
+    width: 42%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.cloud-rigth {
+    position: absolute;
+    width: 42%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.cloud-1 {
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    top: 6%;
+}
+
+.cloud-2 {
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    top: 6%;
+    right: 0px;
+}
+
+.cloud-3 {
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    top: 35%;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cloud-4 {
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    bottom: 20px;
+    left: 0px;
+}
+
+.cloud-5 {
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    bottom: 10%;
+    right: 0;
+}
+
+
+.layer-1 {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+.bird-orange {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 14%;
+    left: 14%;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-o;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-play-state: running;
+
+
+}
+
+@keyframes b-o {
+    0% {
+        left: 15%;
+    }
+
+    100% {
+        left: 80%;
+    }
+}
+
+.bird-orange-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 14%;
+    left: 15%;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-o;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-delay: 15s;
+    animation-play-state: running;
+}
+
+.bird-orange-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    right: 20%;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-o-3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    animation-play-state: running;
+
+}
+
+@keyframes b-o-3 {
+    0% {
+        top: 15%;
+        right: 12%;
+    }
+
+    50% {
+        top: 40%;
+        right: 45%;
+    }
+
+    100% {
+        top: 14%;
+        right: 80%;
+    }
+}
+
+.bird-blue {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 14%;
+    left: 0;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-b;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    animation-play-state: running;
+
+}
+
+@keyframes b-b {
+    0% {
+        left: 10%;
+    }
+
+    80% {
+        left: 10%;
+        top: 80%;
+    }
+
+
+    100% {
+        left: 80%;
+    }
+}
+
+.bird-blue-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 35%;
+    right: 50%;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-b-2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-play-state: running;
+
+}
+
+@keyframes b-b-2 {
+    0% {
+        top: 40%;
+        right: 50%;
+    }
+
+    100% {
+        top: 14%;
+        right: 80%;
+    }
+}
+
+.bird-green {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 14%;
+    left: 100px;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-g;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+
+}
+
+@keyframes b-g {
+    0% {
+        left: 10%;
+    }
+
+    30% {
+        top: 40%;
+        left: 50%;
+    }
+
+    80% {
+        left: 50%;
+        top: 60%;
+    }
+
+    100% {
+        left: 85%;
+        top: 78%;
+
+    }
+}
+
+.bird-green-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+
+    animation-name: b-g-2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+
+}
+
+@keyframes b-g-2 {
+    0% {
+        right: 15%;
+    }
+
+    50% {
+        bottom: 75%;
+        right: 10%;
+    }
+
+    100% {
+        bottom: 75%;
+        right: 85%;
+    }
+}
+
+.peak {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #AF6D31;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: 67px;
+    top: 30px;
+
+}
+
+.body {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F2917C;
+    top: 10px;
+    left: 5px;
+}
+
+.eye {
+    position: absolute;
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 52px;
+    top: 30px;
+}
+
+.wing {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #DD6D54;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(220deg);
+    top: 15px;
+
+}
+
+.body-blue {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #545ADD;
+    top: 10px;
+    left: 5px;
+}
+
+
+.wing-blue {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #0F15AA;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(220deg);
+    top: 15px;
+
+}
+
+.body-green {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8DC95E;
+    top: 10px;
+    left: 5px;
+}
+
+
+.wing-green {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #4B8121;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(220deg);
+    top: 15px;
+
+}
+
+.peak-reverse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #AF6D31;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: 67px;
+    top: 30px;
+    transform: rotate(180deg);
+
+}
+
+.body-reverse {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F2917C;
+    top: 10px;
+    right: 5px;
+}
+
+.eye-reverse {
+    position: absolute;
+    background-color: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 20px;
+    top: 30px;
+}
+
+.wing-reverse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #DD6D54;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(200deg);
+    top: 15px;
+    left: 38px;
+
+}
+
+.body-blue-reverse {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #545ADD;
+    top: 10px;
+    right: 5px;
+}
+
+.wing-blue-reverse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #0F15AA;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(200deg);
+    top: 15px;
+    left: 38px;
+
+}
+
+.body-green-reverse {
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8DC95E;
+    top: 10px;
+    right: 5px;
+}
+
+.wing-green-reverse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #4B8121;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(200deg);
+    top: 15px;
+    left: 38px;
+
+}
+
+.starting {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-columns: 90%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    opacity: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(69, 90, 107);
+    visibility: visible;
+}
+
+.starting:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.point-birds-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: auto;
+    grid-row-start: 3;
+    align-items: center;
+    justify-self: center;
+    visibility: visible;
+}
+
+.orange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird-orange-static {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 65%;
+}
+
+.bird-blue-static {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 65%;
+}
+
+.bird-green-static {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 65%;
+}
+
+.text-1 {
+    text-align: center;
+    grid-row-start: 2;
+}
+
+.text-2 {
+    color: #8DC95E;
+    grid-row-start: 4;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1rem) and (max-width:1029px) {
+    .layer-1 {
+        position: absolute;
+        width: 85%;
+        height: 80%;
+    }
+
+    .timer {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: 0;
+        justify-self: center;
+    }
+
+    .cloud-1 {
+        width: 220px;
+        height: 120px;
+    }
+
+    .cloud-2 {
+        width: 220px;
+        height: 120px;
+    }
+
+    .cloud-3 {
+        width: 220px;
+        height: 120px;
+    }
+
+    .cloud-4 {
+        width: 220px;
+        height: 120px;
+    }
+
+    .cloud-5 {
+        width: 220px;
+        height: 120px;
+    }
+
+
+    .bird-orange {
+        top: 12%;
+    }
+
+
+    .bird-orange-2 {
+        top: 12%;
+    }
+
+    .bird-orange-3 {
+        top: 12%;
+
+    }
+
+    @keyframes b-o-3 {
+        0% {
+            right: 12%;
+        }
+
+        50% {
+            top: 40%;
+            right: 45%;
+        }
+
+        100% {
+            top: 10%;
+            right: 80%;
+        }
+    }
+
+    .bird-blue {
+        top: 12%;
+    }
+
+    @keyframes b-b-2 {
+        0% {
+            top: 40%;
+            right: 50%;
+        }
+
+        100% {
+            top: 10%;
+            right: 80%;
+        }
+    }
+
+    @keyframes b-g {
+        0% {
+            left: 10%;
+        }
+
+        30% {
+            top: 40%;
+            left: 50%;
+        }
+
+        80% {
+            left: 50%;
+            top: 60%;
+        }
+
+        100% {
+            left: 80%;
+            top: 78%;
+
+        }
+    }
+
+    @keyframes b-g-2 {
+        0% {
+            right: 15%;
+        }
+
+        50% {
+            bottom: 80%;
+            right: 10%;
+        }
+
+        100% {
+            bottom: 80%;
+            right: 75%;
+        }
+    }
+
+}
+
+@media screen and (max-width:684px) {
+    .score {
+        margin-left: 60%;
+        width: 20%;
+        padding-left: 4%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 170%;
+    }
+
+    .layer-1 {
+        width: 90%;
+        height: 85%;
+        top: 2%;
+    }
+
+    .starting {
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .button-start {
+        grid-row: 7;
+    }
+
+    .text-2 {
+        grid-row: 6;
+    }
+
+    .point-birds-container {
+        position: absolute;
+        height: auto;
+        flex-direction: column;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        top: 15%;
+        left: 25%;
+    }
+
+    .orange {
+        flex-direction: row;
+        width: 80%;
+        height: 60px;
+    }
+
+    .blue {
+        flex-direction: row;
+        width: 80%;
+        height: 60px;
+    }
+
+    .green {
+        flex-direction: row;
+        width: 80%;
+        height: 60px;
+    }
+
+    .bird-orange-static {
+        width: 70px;
+        height: 60px;
+        left: 0;
+        bottom: 70%;
+    }
+
+    .bird-blue-static {
+        width: 70px;
+        height: 60px;
+        bottom: 37%;
+        left: 0;
+    }
+
+    .bird-green-static {
+        width: 70px;
+        height: 60px;
+        bottom: 2%;
+        left: 0;
+    }
+
+    .cloud-1 {
+        width: 170px;
+        height: 100px;
+        top: 0;
+    }
+
+    .cloud-2 {
+        width: 170px;
+        height: 100px;
+        top: 18%;
+        right: 0px;
+    }
+
+    .cloud-3 {
+        width: 170px;
+        height: 100px;
+        top: 38%;
+        margin: 0;
+    }
+
+    .cloud-4 {
+        width: 170px;
+        height: 100px;
+    }
+
+    .cloud-5 {
+        width: 170px;
+        height: 100px;
+    }
+
+
+    .bird-orange {
+        width: 70px;
+        height: 60px;
+        top: 4%;
+        left: 5%;
+    }
+
+    @keyframes b-o {
+        100% {
+            top: 22%;
+            left: 75%;
+        }
+    }
+
+    .bird-orange-2 {
+        width: 70px;
+        height: 60px;
+        top: 4%;
+        left: 5%;
+    }
+
+    .bird-orange-3 {
+        position: absolute;
+        width: 70px;
+        height: 60px;
+        top: 24%;
+        right: 15%;
+
+    }
+
+    @keyframes b-o-3 {
+        50% {
+            top: 42%;
+            right: 58%;
+        }
+
+        100% {
+            top: 4%;
+            right: 75%;
+        }
+    }
+
+    .bird-blue {
+        position: absolute;
+        width: 70px;
+        height: 60px;
+        top: 4%;
+        left: 4%;
+        cursor: pointer;
+        background-color: transparent;
+
+        animation-duration: 2.5s;
+        animation-delay: 5s;
+    }
+
+    @keyframes b-b {
+        80% {
+            top: 42%;
+            left: 10%;
+        }
+
+
+        100% {
+            top: 78%;
+            left: 72%;
+        }
+    }
+
+    .bird-blue-2 {
+        position: absolute;
+        width: 70px;
+        height: 60px;
+        top: 75%;
+        right: 15%;
+    }
+
+    @keyframes b-b-2 {
+        100% {
+            top: 42%;
+            right: 70%;
+        }
+    }
+
+    .bird-green {
+        width: 70px;
+        height: 60px;
+        top: 4%;
+        left: 4%;
+    }
+
+    @keyframes b-g {
+        30% {
+            top: 40%;
+            left: 20%;
+        }
+
+        80% {
+            left: 20%;
+            top: 85%;
+        }
+
+        100% {
+            left: 65%;
+            top: 20%;
+        }
+    }
+
+    .bird-green-2 {
+        width: 70px;
+        height: 60px;
+        bottom: 12%;
+    }
+
+    @keyframes b-g-2 {
+        0% {
+            right: 15%;
+        }
+
+        50% {
+            bottom: 68%;
+            right: 10%;
+        }
+
+        100% {
+            bottom: 85%;
+            right: 62%;
+        }
+    }
+
+    .peak {
+        border-left: 11px solid #AF6D31;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        left: 83%;
+        top: 27px;
+    }
+
+    .body {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        left: 5px;
+    }
+
+    .eye {
+        width: 7px;
+        height: 7px;
+        left: 46px;
+        top: 26px;
+    }
+
+    .wing {
+        border-left: 26px solid #DD6D54;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 2px;
+    }
+
+    .body-blue {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        left: 5px;
+    }
+
+
+    .wing-blue {
+        border-left: 26px solid #0F15AA;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 2px;
+    }
+
+    .body-green {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        left: 5px;
+    }
+
+
+    .wing-green {
+        border-left: 26px solid #4B8121;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 2px;
+    }
+
+    .peak-reverse {
+        border-left: 11px solid #AF6D31;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        right: 83%;
+        top: 26px;
+    }
+
+    .body-reverse {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        right: 5px;
+    }
+
+    .eye-reverse {
+        width: 7px;
+        height: 7px;
+        left: 18px;
+        top: 26px;
+    }
+
+    .wing-reverse {
+        border-left: 26px solid #DD6D54;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 35px;
+    }
+
+    .body-blue-reverse {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        right: 5px;
+    }
+
+    .wing-blue-reverse {
+        border-left: 26px solid #0F15AA;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 35px;
+    }
+
+    .body-green-reverse {
+        width: 55px;
+        height: 50px;
+        top: 10px;
+        right: 5px;
+    }
+
+    .wing-green-reverse {
+        border-left: 26px solid #4B8121;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        top: 13px;
+        left: 35px;
+    }
+
+}
