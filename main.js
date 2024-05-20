@@ -111,10 +111,11 @@ startBtn.addEventListener("click", () => {
     timerContainer.style.visibility = "visible";
     pointBirds.style.visibility = "hidden";
 
-    counter = 0;
 
     runClock()
     clockTimer = window.setTimeout(runTimer, 31000);
+
+    counterContainer.innerHTML = 0;
 });
 
 //--------------------hidden containers------------------//
