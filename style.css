@@ -267,7 +267,7 @@ h3 {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-delay: 8s;
+    animation-delay: 3s;
     animation-play-state: running;
 
 }
@@ -831,6 +831,7 @@ h3 {
 
     h1 {
         font-size: 45px;
+        top: 0.6%;
     }
 
     h3 {
