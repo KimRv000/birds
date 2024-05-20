@@ -31,22 +31,22 @@ bird_3.addEventListener("click", () => {
 
 })
 bird_4.addEventListener("click", () => {
-    counter+=2
+    counter += 2
     counterContainer.innerHTML = counter;
 
 })
 bird_5.addEventListener("click", () => {
-    counter+=2
+    counter += 2
     counterContainer.innerHTML = counter;
 
 })
 bird_6.addEventListener("click", () => {
-    counter+=3
+    counter += 3
     counterContainer.innerHTML = counter;
 
 })
 bird_7.addEventListener("click", () => {
-    counter+=3
+    counter += 3
     counterContainer.innerHTML = counter;
 
 })
@@ -78,7 +78,7 @@ function stopClock() {
     clearInterval(timer);
 }
 
-let clockTimer; 
+let clockTimer;
 
 function runTimer() {
     stopClock();
@@ -89,9 +89,11 @@ function runTimer() {
     scoreContainer.style.visibility = "hidden";
     timerContainer.style.visibility = "hidden";
     textContainer.innerText = "Time's over!";
-    textContainer_2.innerText="Your score is : " + counter + " points";
+    textContainer_2.innerText = "Your score is : " + counter + " points";
     textContainer_2.style.color = "#DD6D54";
+    textContainer_2.style.gridRow = "4";
     startBtn.innerText = "Re-Start game";
+    startBtn.style.gridRow = "6"
 }
 
 function stopTimer() {
@@ -125,6 +127,6 @@ const pointBirds = document.getElementById("point-birds");
 
 //--------------text containers---------------//
 
-const textContainer=document.getElementById("text-container");
-const textContainer_2=document.getElementById("text-container-2");
+const textContainer = document.getElementById("text-container");
+const textContainer_2 = document.getElementById("text-container-2");
 
