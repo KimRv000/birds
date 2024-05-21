@@ -5,6 +5,7 @@ let counter = 0;
 const counterContainer = document.getElementById("counter");
 counterContainer.innerHTML = counter;
 
+
 //---------birds------------//
 
 const bird_1 = document.getElementById("bird-1");
@@ -93,7 +94,7 @@ function runTimer() {
     textContainer_2.style.color = "#DD6D54";
     textContainer_2.style.gridRow = "4";
     startBtn.innerText = "Re-Start game";
-    startBtn.style.gridRow = "6"
+    startBtn.style.gridRow = "6";
 }
 
 function stopTimer() {
@@ -115,6 +116,7 @@ startBtn.addEventListener("click", () => {
     runClock()
     clockTimer = window.setTimeout(runTimer, 31000);
 
+    counter = 0;
     counterContainer.innerHTML = 0;
 });
 
